@@ -6,6 +6,7 @@ import com.google.common.base.Strings;
 
 public class HashTest {
 	public static void main(String[] args) {
+		// The following code to create an head/tail toss logic using random...
 		for (int i = 0; i < 3; i++)
 			System.out.println((int) (Math.random() * 2 + 1));
 
