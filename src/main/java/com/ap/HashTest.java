@@ -21,16 +21,14 @@ public class HashTest {
 
 		for (String s : strArray) {
 			int hashCode = s.hashCode();
-			System.out.println(
-					s + "\t" + StringUtils.leftPad(Integer.toBinaryString(hashCode), 32, "0") + "\t" + (hashCode & n));
+			System.out.println(s + "\t" + StringUtils.leftPad(Integer.toBinaryString(hashCode), 32, "0") + "\t" + (hashCode & n));
 		}
 		
 		System.out.println("");
 
 		for (String s : strArray) {
 			int hashCode = s.hashCode();
-			System.out.println(
-					s + "\t" + Strings.padStart(Integer.toBinaryString(hashCode), 32, '0') + "\t" + (hashCode & n));
+			System.out.println(s + "\t" + Strings.padStart(Integer.toBinaryString(hashCode), 32, '0') + "\t" + (hashCode & n));
 		}
 	}
 }
